@@ -187,26 +187,34 @@ ul { margin: 0; padding: 0; list-style: none; }
 .has-dropdown { position: relative; }
 .dropdown-caret { font-size: 0.65em; margin-left: 4px; }
 .dropdown {
-  position: absolute;
-  top: calc(100% + 14px);
-  left: 50%;
-  transform: translateX(-50%);
   background: #fff;
   border: 1px solid var(--line);
   border-radius: 12px;
   box-shadow: var(--shadow);
   min-width: 220px;
   padding: 10px;
-  opacity: 0;
-  visibility: hidden;
-  transform-origin: top center;
-  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
 }
-.has-dropdown:hover .dropdown,
-.has-dropdown:focus-within .dropdown {
-  opacity: 1;
-  visibility: visible;
-  transform: translateX(-50%) translateY(0);
+
+/* Hover-revealed dropdown is a desktop-only interaction; on touch
+   devices the nav JS toggles a plain block via .is-open instead, so
+   these rules are scoped to avoid fighting that with specificity. */
+@media (min-width: 761px) {
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transform-origin: top center;
+    transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  }
+  .has-dropdown:hover .dropdown,
+  .has-dropdown:focus-within .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
+  }
 }
 .dropdown li a {
   display: flex;
@@ -596,10 +604,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   .main-nav ul { flex-direction: column; align-items: stretch; padding: 10px 24px 24px; gap: 4px; }
   .main-nav a.nav-link { display: block; padding: 12px 0; border-bottom: 1px solid var(--line); }
   .has-dropdown .dropdown {
-    position: static;
-    transform: none;
-    opacity: 1;
-    visibility: visible;
     display: none;
     box-shadow: none;
     border: none;
