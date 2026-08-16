@@ -114,6 +114,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 /* ---------- Brand wordmark ---------- */
 .brand { display: flex; flex-direction: column; align-items: center; line-height: 1; }
+.brand-logo { height: 84px; width: auto; }
 .brand-name { display: flex; align-items: baseline; gap: 6px; }
 .brand-total {
   font-family: "Playfair Display", serif;
@@ -153,8 +154,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   gap: 20px;
 }
 
@@ -620,6 +621,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 @media (max-width: 500px) {
   .hero { padding: 60px 0 52px; }
   .section { padding: 60px 0; }
+  .brand-logo { height: 64px; }
   .brand-total { font-size: 1.25rem; }
   .brand-vibe { font-size: 1.65rem; }
 }

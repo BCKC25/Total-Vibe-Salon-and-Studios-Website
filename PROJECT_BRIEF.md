@@ -90,10 +90,10 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 - [ ] Square Appointments embed code/site ID for Kristen's Lash and Hair pages (currently placeholder slots)
 - [ ] Booking platforms for Laser Hair Removal and Massage providers once hired
 - [ ] Exact Facebook page URL for Total Vibe Salon (footer/contact currently link to a Facebook search for "Total Vibe Salon" rather than a guessed URL)
-- [ ] Real logo file (`Logo.jpg`) — the site currently uses a text-based wordmark ("Total" in serif + "Vibe" in script + "SALON & STUDIOS" in small caps) recreating the logo's typography cues, in `assets/images/`
 - [ ] Photography for hero + service pages (currently text/color-only, no imagery)
 
 ## Resolved during build
 
 - **Address:** 1510 Whiskey Rd, Aiken, SC — used for the Contact page map embed (confirmed via Peak Mobility Yoga, which operates inside this same building).
 - **Yoga provider:** Peak Mobility Yoga — name, external site (peakmobilityyoga.com), and Instagram confirmed and linked from the Yoga service page.
+- **Real logo file:** `assets/images/logo.jpg` (original, cleaned) and `assets/images/logo.png` (transparent cutout, used site-wide in the header/favicon) — sourced from the client's `Logo.jpg`, with the stray cropped text in the bottom-left and bottom-right corners removed. The footer keeps a text-based wordmark since the logo's black linework has poor contrast on the dark charcoal footer background.
