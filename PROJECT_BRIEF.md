@@ -1,0 +1,99 @@
+# Total Vibe Salon & Studios — Website Project Brief
+
+Reference doc for building this site with Claude Code. Kept in the repo root so it has context in every session.
+
+## 1. Business Overview
+
+Total Vibe Salon & Studios is a multi-use beauty & relaxation building housing multiple independent service providers under one roof/brand.
+
+**Owner:** Kristen Stone — performs Lash Extensions and Hair services herself.
+
+**Current services (live at launch):**
+
+| Service | Provider | Booking |
+|---|---|---|
+| Lash Extensions | Kristen Stone (owner) | Square |
+| Full Service Hair Salon | Kristen Stone (owner) | Square |
+
+**Planned / future services** (pages built now, launched as "coming soon" until ready):
+
+| Service | Provider | Booking |
+|---|---|---|
+| Laser Hair Removal | TBD stylist | Link out to their own system |
+| Massage | TBD provider | Link out to their own system |
+| Yoga | Peak Mobility Yoga (owner's wife's business) | Link out to their own system |
+
+Each provider runs their own booking — only Kristen's services (Lash + Hair) integrate with Square directly; every other provider gets a clearly labeled "Book with [Provider]" button that links out to whatever platform they use.
+
+## 2. Brand Palette
+
+Pulled directly from the logo (Logo.jpg):
+
+| Color | Hex | Use |
+|---|---|---|
+| Blush Pink | `#FBDCE2` | Primary background |
+| Charcoal Black | `#1A1613` | Headings, logo linework, primary text |
+| White | `#FFFFFF` | Cards, contrast sections |
+| Soft Cream | `#FDF6F3` | Alternate section background |
+
+Typography: elegant serif ("Total") + flowing script ("Vibe") + wide-tracked small-caps sans ("SALON").
+
+- Headings: Playfair Display
+- Body: Inter
+- Script accent: Parisienne
+- Small-caps letter-spaced labels for section eyebrows/tags
+
+## 3. Contact & Social
+
+- Phone: (803) 646-5896
+- Email: totalvibesalon@gmail.com
+- Instagram: [@total.vibe.salon](https://www.instagram.com/total.vibe.salon/)
+- TikTok: [@totalvibesalon](https://www.tiktok.com/@totalvibesalon)
+- Facebook: Total Vibe Salon
+
+## 4. Tech Stack
+
+Plain HTML/CSS/JS — no framework, no build step. Vanilla JS only for the mobile nav toggle.
+
+```
+/
+├── index.html
+├── about.html
+├── contact.html
+├── services/
+│   ├── lash-extensions.html
+│   ├── hair-salon.html
+│   ├── laser-hair-removal.html
+│   ├── massage.html
+│   └── yoga.html
+├── css/
+│   └── styles.css
+├── js/
+│   └── main.js
+├── assets/
+│   └── images/
+└── PROJECT_BRIEF.md
+```
+
+## 5. Site Structure
+
+Nav: Home / About / Services (dropdown: each service) / Contact — consistent header + footer across all pages with social links, phone, and email.
+
+## 6. Booking Integration Notes
+
+- Kristen's two services (Lash, Hair) each have a `.square-embed-slot` placeholder on their pages, marked with a setup note. Replace it with the real Square Appointments embed snippet (Square Dashboard → Appointments → Online Booking → Share → Embed) once available. Call/email fallback buttons are live in the meantime.
+- Laser Hair Removal and Massage ship as "Coming Soon — join our list" pages with a `mailto:` fallback, since no provider is confirmed yet.
+- Yoga links out externally to Peak Mobility Yoga.
+
+## 7. Open Items to Confirm Later
+
+- [ ] Square Appointments embed code/site ID for Kristen's Lash and Hair pages (currently placeholder slots)
+- [ ] Booking platforms for Laser Hair Removal and Massage providers once hired
+- [ ] Exact Facebook page URL for Total Vibe Salon (footer/contact currently link to a Facebook search for "Total Vibe Salon" rather than a guessed URL)
+- [ ] Real logo file (`Logo.jpg`) — the site currently uses a text-based wordmark ("Total" in serif + "Vibe" in script + "SALON & STUDIOS" in small caps) recreating the logo's typography cues, in `assets/images/`
+- [ ] Photography for hero + service pages (currently text/color-only, no imagery)
+
+## Resolved during build
+
+- **Address:** 1510 Whiskey Rd, Aiken, SC — used for the Contact page map embed (confirmed via Peak Mobility Yoga, which operates inside this same building).
+- **Yoga provider:** Peak Mobility Yoga — name, external site (peakmobilityyoga.com), and Instagram confirmed and linked from the Yoga service page.
