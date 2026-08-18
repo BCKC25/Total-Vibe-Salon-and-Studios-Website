@@ -285,6 +285,21 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .page-hero { padding: 64px 0 56px; }
 
+/* Standalone feature photo, dropped below a page-hero when a real
+   photo is available for that service (portrait crop preserved,
+   no forced landscape crop that would cut off the subject). */
+.section-photo { padding: 0 0 84px; }
+.service-feature-photo {
+  max-width: 520px;
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: center 15%;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin: 0 auto;
+}
+
 /* ---------- Circle motif ----------
    Echoes the logo's open circular swoosh as a large, cropped, asymmetric
    line-art accent, reused (at different sizes/positions/rotations) across
