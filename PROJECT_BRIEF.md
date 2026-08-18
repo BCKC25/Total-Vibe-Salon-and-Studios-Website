@@ -6,14 +6,14 @@ Reference doc for building this site with Claude Code. Kept in the repo root so 
 
 Total Vibe Salon & Studios is a multi-use beauty & relaxation building housing multiple independent service providers under one roof/brand.
 
-**Owner:** Kristen Stone — performs Lash Extensions and Hair services herself.
+**Owner:** Kristin Stone — performs Lash Extensions and Hair services herself, alongside other stylists at the salon (Lash and Hair are team services, not solo-provider).
 
 **Current services (live at launch):**
 
 | Service | Provider | Booking |
 |---|---|---|
-| Lash Extensions | Kristen Stone (owner) | Square |
-| Full Service Hair Salon | Kristen Stone (owner) | Square |
+| Lash Extensions | Total Vibe lash team (incl. owner Kristin Stone) | Square |
+| Full Service Hair Salon | Total Vibe stylist team (incl. owner Kristin Stone) | Square |
 
 **Planned / future services** (pages built now, launched as "coming soon" until ready):
 
@@ -23,7 +23,7 @@ Total Vibe Salon & Studios is a multi-use beauty & relaxation building housing m
 | Massage | TBD provider | Link out to their own system |
 | Yoga | Peak Mobility Yoga (owner's wife's business) | Link out to their own system |
 
-Each provider runs their own booking — only Kristen's services (Lash + Hair) integrate with Square directly; every other provider gets a clearly labeled "Book with [Provider]" button that links out to whatever platform they use.
+Each provider runs their own booking — only Lash + Hair integrate with Square directly; every other provider gets a clearly labeled "Book with [Provider]" button that links out to whatever platform they use.
 
 ## 2. Brand Palette
 
@@ -81,13 +81,13 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 
 ## 6. Booking Integration Notes
 
-- Kristen's two services (Lash, Hair) each have a `.square-embed-slot` placeholder on their pages, marked with a setup note. Replace it with the real Square Appointments embed snippet (Square Dashboard → Appointments → Online Booking → Share → Embed) once available. Call/email fallback buttons are live in the meantime.
+- Lash and Hair each have a `.square-embed-slot` placeholder on their pages, marked with a setup note. Replace it with the real Square Appointments embed snippet (Square Dashboard → Appointments → Online Booking → Share → Embed) once available. Call/email fallback buttons are live in the meantime.
 - Laser Hair Removal and Massage ship as "Coming Soon — join our list" pages with a `mailto:` fallback, since no provider is confirmed yet.
 - Yoga links out externally to Peak Mobility Yoga.
 
 ## 7. Open Items to Confirm Later
 
-- [ ] Square Appointments embed code/site ID for Kristen's Lash and Hair pages (currently placeholder slots)
+- [ ] Square Appointments embed code/site ID for the Lash and Hair pages (currently placeholder slots)
 - [ ] Booking platforms for Laser Hair Removal and Massage providers once hired
 - [ ] Exact Facebook page URL for Total Vibe Salon (footer/contact currently link to a Facebook search for "Total Vibe Salon" rather than a guessed URL)
 - [ ] Photography for hero + service pages (currently text/color-only, no imagery)
@@ -97,3 +97,5 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 - **Address:** 1510 Whiskey Rd, Aiken, SC — used for the Contact page map embed (confirmed via Peak Mobility Yoga, which operates inside this same building).
 - **Yoga provider:** Peak Mobility Yoga — name, external site (peakmobilityyoga.com), and Instagram confirmed and linked from the Yoga service page.
 - **Real logo file:** `assets/images/logo.jpg` (original, cleaned) and `assets/images/logo.png` (transparent cutout, used site-wide in the header/favicon) — sourced from the client's `Logo.jpg`, with the stray cropped text in the bottom-left and bottom-right corners removed. The footer keeps a text-based wordmark since the logo's black linework has poor contrast on the dark charcoal footer background.
+- **Owner name spelling:** corrected "Kristen" → "Kristin" (Stone) everywhere.
+- **Lash/Hair attribution:** Lash Extensions and Hair Salon are performed by multiple stylists at Total Vibe, not exclusively the owner — the Lash and Hair service pages, and the matching cards on the home page, now credit "our lash artists" / "our stylists" / "Total Vibe Team" instead of naming Kristin as the sole provider. Her name stays on the About page, where she's introduced personally as the owner.
