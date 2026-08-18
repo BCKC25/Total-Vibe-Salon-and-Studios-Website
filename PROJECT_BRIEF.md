@@ -14,12 +14,12 @@ Total Vibe Salon & Studios is a multi-use beauty & relaxation building housing m
 |---|---|---|
 | Lash Extensions | Total Vibe lash team (incl. owner Kristin Stone) | Square |
 | Full Service Hair Salon | Total Vibe stylist team (incl. owner Kristin Stone) | Square |
+| Botanical Smoothing | Total Vibe specialist (name TBD) | Call/email for now — confirm booking method |
 
 **Planned / future services** (pages built now, launched as "coming soon" until ready):
 
 | Service | Provider | Booking |
 |---|---|---|
-| Laser Hair Removal | TBD stylist | Link out to their own system |
 | Massage | TBD provider | Link out to their own system |
 | Yoga | Peak Mobility Yoga (owner's wife's business) | Link out to their own system |
 
@@ -63,7 +63,7 @@ Plain HTML/CSS/JS — no framework, no build step. Vanilla JS only for the mobil
 ├── services/
 │   ├── lash-extensions.html
 │   ├── hair-salon.html
-│   ├── laser-hair-removal.html
+│   ├── botanical-smoothing.html
 │   ├── massage.html
 │   └── yoga.html
 ├── css/
@@ -82,13 +82,15 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 ## 6. Booking Integration Notes
 
 - Lash and Hair each have a `.square-embed-slot` placeholder on their pages, marked with a setup note. Replace it with the real Square Appointments embed snippet (Square Dashboard → Appointments → Online Booking → Share → Embed) once available. Call/email fallback buttons are live in the meantime.
-- Laser Hair Removal and Massage ship as "Coming Soon — join our list" pages with a `mailto:` fallback, since no provider is confirmed yet.
+- Botanical Smoothing is live with call/email booking as a placeholder — swap in the specialist's name and real booking method (Square, external link, etc.) once confirmed.
+- Massage ships as a "Coming Soon — join our list" page with a `mailto:` fallback, since no provider is confirmed yet.
 - Yoga links out externally to Peak Mobility Yoga.
 
 ## 7. Open Items to Confirm Later
 
 - [ ] Square Appointments embed code/site ID for the Lash and Hair pages (currently placeholder slots)
-- [ ] Booking platforms for Laser Hair Removal and Massage providers once hired
+- [ ] Botanical Smoothing: specialist's name, a short description of the treatment, and real booking method (currently generic "our specialist" copy + call/email)
+- [ ] Booking platform for Massage once a provider is hired
 - [ ] Exact Facebook page URL for Total Vibe Salon (footer/contact currently link to a Facebook search for "Total Vibe Salon" rather than a guessed URL)
 - [ ] Photography for hero + service pages (currently text/color-only, no imagery)
 
@@ -99,3 +101,4 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 - **Real logo file:** `assets/images/logo.jpg` (original, cleaned) and `assets/images/logo.png` (transparent cutout, used site-wide in the header/favicon) — sourced from the client's `Logo.jpg`, with the stray cropped text in the bottom-left and bottom-right corners removed. The footer keeps a text-based wordmark since the logo's black linework has poor contrast on the dark charcoal footer background.
 - **Owner name spelling:** corrected "Kristen" → "Kristin" (Stone) everywhere.
 - **Lash/Hair attribution:** Lash Extensions and Hair Salon are performed by multiple stylists at Total Vibe, not exclusively the owner — the Lash and Hair service pages, and the matching cards on the home page, now credit "our lash artists" / "our stylists" / "Total Vibe Team" instead of naming Kristin as the sole provider. Her name stays on the About page, where she's introduced personally as the owner.
+- **Laser Hair Removal → Botanical Smoothing:** renamed everywhere (nav, footer, home card, file renamed to `services/botanical-smoothing.html`) and taken off the "Coming Soon" list since it's offered by a provider now. The page's copy is intentionally generic ("our specialist," call/email booking) pending the provider's name, a description of the treatment, and a real booking method — see Open Items.
