@@ -147,7 +147,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   z-index: 100;
   background: rgba(253, 246, 243, 0.94);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line);
+  box-shadow: 0 16px 28px -22px rgba(26, 22, 19, 0.22);
+  transition: box-shadow 0.25s ease;
 }
 
 .header-inner {
