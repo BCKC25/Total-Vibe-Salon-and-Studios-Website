@@ -475,6 +475,14 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 36px 30px;
   box-shadow: var(--shadow);
 }
+.owner-photo {
+  width: 100%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius) - 4px);
+  margin-bottom: 22px;
+}
 .owner-card .eyebrow { margin-bottom: 8px; }
 .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-top: 12px; }
 .value-card {
