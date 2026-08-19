@@ -288,7 +288,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Standalone feature photo, dropped below a page-hero when a real
    photo is available for that service (portrait crop preserved,
    no forced landscape crop that would cut off the subject). */
-.section-photo { padding: 0 0 84px; }
+.section-photo { padding: 0 0 68px; }
 .service-photo-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -355,7 +355,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 
 /* ---------- Sections ---------- */
-.section { padding: 84px 0; }
+.section { padding: 68px 0; }
 .section-tint { background: var(--blush-soft); }
 .section-dark { background: var(--charcoal); color: #fff; }
 .section-dark p { color: rgba(255,255,255,0.78); }
@@ -492,7 +492,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .contact-strip-item a { font-weight: 600; color: var(--charcoal); }
 
 /* ---------- About page ---------- */
-.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: center; }
+.about-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 56px; align-items: start; }
 .owner-card {
   background: #fff;
   border: 1px solid var(--line);
