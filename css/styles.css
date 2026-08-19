@@ -289,15 +289,25 @@ ul { margin: 0; padding: 0; list-style: none; }
    photo is available for that service (portrait crop preserved,
    no forced landscape crop that would cut off the subject). */
 .section-photo { padding: 0 0 84px; }
+.service-photo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 760px;
+  margin: 0 auto;
+}
+.service-photo-grid.single { grid-template-columns: 1fr; max-width: 520px; }
 .service-feature-photo {
-  max-width: 520px;
   width: 100%;
   aspect-ratio: 3 / 4;
   object-fit: cover;
   object-position: center 15%;
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 700px) {
+  .service-photo-grid { grid-template-columns: 1fr; max-width: 420px; }
 }
 
 /* ---------- Circle motif ----------
