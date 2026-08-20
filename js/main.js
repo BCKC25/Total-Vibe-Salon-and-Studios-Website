@@ -35,4 +35,22 @@ document.addEventListener("DOMContentLoaded", () => {
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // Practitioner tabs: switch which artist's info is shown within a
+  // service page (e.g. Kristin vs. Lilly on the Lash Extensions page).
+  document.querySelectorAll(".practitioner-tabs").forEach((tabGroup) => {
+    const wrapper = tabGroup.parentElement;
+    const tabs = tabGroup.querySelectorAll(".practitioner-tab");
+    const panels = wrapper.querySelectorAll(".practitioner-panel");
+
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.getAttribute("data-practitioner");
+        tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.getAttribute("data-practitioner-panel") === target);
+        });
+      });
+    });
+  });
 });
