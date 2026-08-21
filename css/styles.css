@@ -625,7 +625,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .practitioner-panel {
   display: none;
-  max-width: 640px;
+  max-width: 720px;
   margin: 0 auto;
   background: #fff;
   border: 1px solid var(--line);
@@ -633,9 +633,21 @@ ul { margin: 0; padding: 0; list-style: none; }
   padding: 34px 32px;
   box-shadow: var(--shadow);
   text-align: center;
+  gap: 28px;
+  align-items: flex-start;
 }
-.practitioner-panel.is-active { display: block; }
-.practitioner-panel .role {
+.practitioner-panel.is-active { display: flex; }
+.practitioner-panel-photo {
+  width: 170px;
+  flex-shrink: 0;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius) - 4px);
+  box-shadow: var(--shadow);
+}
+.practitioner-panel-content { flex: 1; min-width: 0; text-align: left; }
+.practitioner-panel-content .role {
   display: block;
   font-size: 0.78rem;
   font-weight: 600;
@@ -644,11 +656,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--charcoal-soft);
   margin-bottom: 10px;
 }
-.practitioner-panel h3 { margin-bottom: 10px; }
-.practitioner-panel .price-group { margin-top: 20px; text-align: left; max-width: 420px; margin-left: auto; margin-right: auto; }
-.practitioner-panel .price-group-label { font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
-.practitioner-panel .price-list { display: grid; gap: 8px; margin-bottom: 4px; }
-.practitioner-panel .price-list li {
+.practitioner-panel-content h3 { margin-bottom: 10px; }
+.practitioner-panel-content .price-group { margin-top: 20px; }
+.practitioner-panel-content .price-group-label { font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
+.practitioner-panel-content .price-list { display: grid; gap: 8px; margin-bottom: 4px; }
+.practitioner-panel-content .price-list li {
   display: flex;
   justify-content: space-between;
   gap: 12px;
@@ -657,9 +669,30 @@ ul { margin: 0; padding: 0; list-style: none; }
   color: var(--charcoal-soft);
   font-size: 0.9rem;
 }
-.practitioner-panel .price-list li strong { color: var(--charcoal); font-variant-numeric: tabular-nums; }
-.practitioner-panel .btn { margin-top: 20px; }
-.practitioner-panel .btn + .btn { margin-top: 10px; }
+.practitioner-panel-content .price-list li strong { color: var(--charcoal); font-variant-numeric: tabular-nums; }
+.practitioner-panel-content .btn { margin-top: 20px; }
+.practitioner-panel-content .btn + .btn { margin-top: 10px; }
+
+@media (max-width: 600px) {
+  .practitioner-panel.is-active { flex-direction: column; align-items: center; text-align: center; }
+  .practitioner-panel-photo { width: 150px; }
+  .practitioner-panel-content { text-align: center; }
+}
+
+/* Booking-panel photo: the narrow single-provider sidebar (Waxing,
+   Nails) doesn't have room for a side-by-side layout, so the photo
+   always stacks above the existing content instead. */
+.booking-panel-photo {
+  width: 100%;
+  max-width: 190px;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  object-position: top center;
+  border-radius: calc(var(--radius) - 4px);
+  margin: 0 auto 20px;
+  display: block;
+  box-shadow: var(--shadow);
+}
 
 /* ---------- Contact page ---------- */
 .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; }
