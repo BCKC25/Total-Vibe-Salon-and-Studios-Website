@@ -572,17 +572,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-top: 6px;
 }
 
-.square-embed-slot {
-  border: 1.5px dashed var(--line);
-  border-radius: 12px;
-  padding: 22px 18px;
-  text-align: center;
-  margin-bottom: 16px;
-  background: var(--cream);
-}
-.square-embed-slot p { font-size: 0.85rem; margin: 0 0 4px; }
-.square-embed-slot .setup-note { font-size: 0.72rem; color: var(--charcoal-soft); }
-
 .coming-soon-panel { text-align: center; }
 .coming-soon-badge {
   display: inline-block;

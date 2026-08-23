@@ -81,15 +81,13 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 
 ## 6. Booking Integration Notes
 
-- Lash and Hair pages let visitors pick a stylist (Kristin or Lilly) and book directly with them. Kristin's card has a `.square-embed-slot` placeholder, marked with a setup note — replace it with her real Square Appointments embed snippet (Square Dashboard → Appointments → Online Booking → Share → Embed) once available; call/email fallback buttons are live in the meantime. Lilly's card links straight to her own Square booking page.
+- The Lash Extensions page lets visitors pick a stylist (Kristin or Lilly) and book directly with them. Both now link straight to their own Square booking page; call/email buttons remain as a fallback on Kristin's card.
 - Waxing is Lilly Lopez's page, booked through her Square link.
 - Massage ships as a "Coming Soon — join our list" page with a `mailto:` fallback, since no provider is confirmed yet.
 - Yoga links out externally to Peak Mobility Yoga.
 
 ## 7. Open Items to Confirm Later
 
-- [ ] Kristin's Square Appointments embed code/site ID for the Lash and Hair pages (currently a placeholder slot; Lilly's Square link is already live)
-- [ ] Booking platform for Massage once a provider is hired
 - [ ] Exact Facebook page URL for Total Vibe Salon (footer/contact currently link to a Facebook search for "Total Vibe Salon" rather than a guessed URL)
 - [ ] Photography for hero + service pages (currently text/color-only, no imagery)
 
@@ -101,4 +99,5 @@ Nav: Home / About / Services (dropdown: each service) / Contact — consistent h
 - **Owner name spelling:** corrected "Kristen" → "Kristin" (Stone) everywhere.
 - **Lash/Hair attribution:** Lash Extensions and Hair Salon are performed by multiple stylists at Total Vibe, not exclusively the owner — the Lash and Hair service pages, and the matching cards on the home page, now credit "our lash artists" / "our stylists" / "Total Vibe Team" instead of naming Kristin as the sole provider. Her name stays on the About page, where she's introduced personally as the owner.
 - **Botanical Smoothing → Waxing:** the placeholder "Botanical Smoothing" service was actually the same treatment Lilly Lopez calls Waxing, so the standalone page and all nav/footer/home references were removed in favor of the real `services/waxing.html` page.
-- **Second stylist added:** Lilly Lopez (Master Cosmetologist & Lash Artist) joined the Lash Extensions and Hair Salon pages alongside Kristin Stone, each with their own booking method — Lilly's own Square link, Kristin's Square embed pending. Lilly also has her own Waxing page.
+- **Second stylist added:** Lilly Lopez (Master Cosmetologist & Lash Artist) joined the Lash Extensions page alongside Kristin Stone, each with their own booking method — Lilly's own Square link, and Kristin's own Square link. Lilly also has her own Waxing page.
+- **Kristin's Square link added:** Kristin's Lash Extensions booking now links straight to her own Square Appointments page, replacing the placeholder embed slot.
