@@ -646,19 +646,6 @@ ul { margin: 0; padding: 0; list-style: none; }
   margin-bottom: 10px;
 }
 .practitioner-panel-content h3 { margin-bottom: 10px; }
-.practitioner-panel-content .price-group { margin-top: 20px; }
-.practitioner-panel-content .price-group-label { font-weight: 700; color: var(--charcoal); margin-bottom: 8px; }
-.practitioner-panel-content .price-list { display: grid; gap: 8px; margin-bottom: 4px; }
-.practitioner-panel-content .price-list li {
-  display: flex;
-  justify-content: space-between;
-  gap: 12px;
-  padding-bottom: 8px;
-  border-bottom: 1px dashed var(--line);
-  color: var(--charcoal-soft);
-  font-size: 0.9rem;
-}
-.practitioner-panel-content .price-list li strong { color: var(--charcoal); font-variant-numeric: tabular-nums; }
 .practitioner-panel-content .btn { margin-top: 20px; }
 .practitioner-panel-content .btn + .btn { margin-top: 10px; }
 
