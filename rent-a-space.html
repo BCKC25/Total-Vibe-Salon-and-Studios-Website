@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-94V0CGF5PK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-94V0CGF5PK');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rent a Space | Total Vibe Salon &amp; Studios</title>
+  <meta name="description" content="Rent a booth, treatment room, or suite at Total Vibe Salon &amp; Studios in Aiken, SC. Bring your clients, set your own schedule, and grow your business under one roof." />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Parisienne&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css?v=2" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/images/logo.png" alt="Total Vibe Salon &amp; Studios logo" class="brand-logo" />
+      </a>
+
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li class="has-dropdown">
+            <a href="services/lash-extensions.html" class="nav-link dropdown-toggle">Services <span class="dropdown-caret">&#9662;</span></a>
+            <ul class="dropdown">
+              <li><a href="services/lash-extensions.html">Lash Extensions</a></li>
+              <li><a href="services/hair-salon.html">Hair Salon</a></li>
+              <li><a href="services/waxing.html">Waxing</a></li>
+              <li><a href="services/nails.html">Nails</a></li>
+              <li><a href="services/spray-tan.html">Spray Tan</a></li>
+              <li><a href="services/electrolysis-facials.html">Electrolysis &amp; Facials</a></li>
+              <li><a href="services/yoga.html">Yoga</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="tel:+18036465896" class="btn btn-outline btn-sm">(803) 646-5896</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="main-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 1. Hero -->
+    <section class="hero page-hero">
+      <svg class="circle-motif circle-motif--page" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+        <circle cx="200" cy="200" r="188" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="88 12" />
+      </svg>
+      <div class="container hero-inner">
+        <p class="eyebrow">Space For Rent</p>
+        <h1>Grow Your Business at Total Vibe</h1>
+        <p class="hero-sub">Space is available for independent stylists, estheticians, and massage therapists who already have clients booking with them. Bring your clients, set your schedule, and grow your business inside an established, multi-provider studio.</p>
+        <div class="hero-actions">
+          <a href="#inquiry-form" class="btn btn-primary btn-lg">Inquire About a Space</a>
+          <a href="tel:+18036465896" class="btn btn-outline btn-lg">Call (803) 646-5896</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Short pitch -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow center">Why Total Vibe</p>
+        <h2 class="center">Your business, under our roof</h2>
+        <p class="section-lead center">We built Total Vibe for established independent professionals &mdash; not a commission chair, not a franchise. Just your own space, your own clients, and your own business.</p>
+        <p class="center" style="margin-top: -8px;">
+          <span class="service-meta" style="display: inline-flex; justify-content: center;"><span>&#128205; 1510 Whiskey Rd, Aiken, SC</span></span>
+        </p>
+
+        <div class="benefit-grid">
+          <div class="value-card">
+            <h3>Be Your Own Boss</h3>
+            <p>Run your own book of business, your own pricing, and your own brand &mdash; under one shared roof.</p>
+          </div>
+          <div class="value-card">
+            <h3>Set Your Own Hours</h3>
+            <p>Work the schedule that fits your life and your clients, not someone else's.</p>
+          </div>
+          <div class="value-card">
+            <h3>Keep Your Earnings</h3>
+            <p>No commission splits &mdash; just a simple space rental, so you keep what you earn.</p>
+          </div>
+          <div class="value-card">
+            <h3>A Supportive Studio</h3>
+            <p>Join a multi-provider studio already busy with lash, hair, waxing, nails, spray tan and more &mdash; built-in energy and community.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Available Spaces -->
+    <section class="section section-tint">
+      <div class="container">
+        <p class="eyebrow center">Available Spaces</p>
+        <h2 class="center">Find your space</h2>
+        <p class="section-lead center">Three space types, each suited to a different kind of independent practice.</p>
+
+        <!--
+          Space cards are rendered from the SPACES array in the script
+          at the bottom of this page (search "SPACES ="). Each entry's
+          `status` ("available" / "filled" / "coming-soon") drives both
+          the badge styling/label and the card's button label in one
+          place — change that one value to update a card.
+        -->
+        <div class="space-grid" id="space-grid"></div>
+      </div>
+    </section>
+
+    <!-- 4. What's Included -->
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow center">What's Included</p>
+        <h2 class="center">Everything you need to just show up and work</h2>
+
+        <div class="amenity-grid">
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>Utilities Included</h4><p>Power, water, and heating/cooling.</p></div>
+          </div>
+          <!-- [confirm] exact utilities covered vs. billed separately -->
+
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>High-Speed Wi-Fi</h4><p>Reliable Wi-Fi throughout the building.</p></div>
+          </div>
+          <!-- [confirm] provider/speed details -->
+
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>On-Site Parking</h4><p>Convenient parking for you and your clients.</p></div>
+          </div>
+          <!-- [confirm] number of spaces / any restrictions -->
+
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>Laundry Access</h4><p>On-site laundry for towels and linens.</p></div>
+          </div>
+          <!-- [confirm] shared vs. per-provider, any fee -->
+
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>Storage Space</h4><p>A dedicated spot to keep your tools and product stocked.</p></div>
+          </div>
+          <!-- [confirm] amount of storage per space -->
+
+          <div class="amenity-item">
+            <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <div><h4>Flexible Access Hours</h4><p>Come and go on a schedule that works for you and your clients.</p></div>
+          </div>
+          <!-- [confirm] exact access hours / after-hours policy -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Requirements -->
+    <section class="section section-tint">
+      <div class="container" style="max-width: 760px;">
+        <p class="eyebrow center">Requirements</p>
+        <h2 class="center">What we ask of every provider</h2>
+        <ul class="service-list" style="margin-top: 22px;">
+          <li>Active South Carolina license in your field (cosmetology, esthetics, or massage therapy)</li>
+          <li>Proof of current professional liability insurance</li>
+          <li class="placeholder-note">[more TBD]</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 6. FAQ -->
+    <section class="section">
+      <div class="container" style="max-width: 760px;">
+        <p class="eyebrow center">FAQ</p>
+        <h2 class="center">Questions, answered</h2>
+
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary>How long is the lease term?</summary>
+            <p class="faq-answer placeholder-note">[TBD &mdash; lease length to be confirmed]</p>
+          </details>
+          <details class="faq-item">
+            <summary>Is a deposit required?</summary>
+            <p class="faq-answer placeholder-note">[TBD &mdash; deposit amount and terms to be confirmed]</p>
+          </details>
+          <details class="faq-item">
+            <summary>What are the studio's access hours?</summary>
+            <p class="faq-answer placeholder-note">[TBD &mdash; access hours to be confirmed]</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I bring and sell my own products?</summary>
+            <p class="faq-answer placeholder-note">[TBD &mdash; product policy to be confirmed]</p>
+          </details>
+          <details class="faq-item">
+            <summary>How soon can I start?</summary>
+            <p class="faq-answer placeholder-note">[TBD &mdash; depends on current space availability; we'll confirm an exact timeline with you directly]</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Inquiry form -->
+    <section class="section section-tint">
+      <div class="container">
+        <p class="eyebrow center">Inquire</p>
+        <h2 class="center">Tell us about you &amp; your business</h2>
+        <p class="section-lead center">Fill this out and we'll follow up to talk details and set up a time to see the space in person.</p>
+
+        <div class="form-card" id="inquiry-form">
+          <!--
+            TODO before this goes live: replace YOUR_FORM_ID below with
+            a real Formspree form ID. Sign up at https://formspree.io,
+            create a form, and swap the ID in the action URL.
+          -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="hidden" name="_subject" value="New Space Rental Inquiry &mdash; Total Vibe" />
+
+            <div class="form-grid">
+              <div class="form-field">
+                <label for="inquiry-name">Name</label>
+                <input type="text" id="inquiry-name" name="name" required />
+              </div>
+              <div class="form-field">
+                <label for="inquiry-phone">Phone</label>
+                <input type="tel" id="inquiry-phone" name="phone" required />
+              </div>
+
+              <div class="form-field">
+                <label for="inquiry-email">Email</label>
+                <input type="email" id="inquiry-email" name="email" required />
+              </div>
+              <div class="form-field">
+                <label for="space-interest">Space of Interest</label>
+                <select id="space-interest" name="space_of_interest" required>
+                  <option value="" disabled selected>Select a space</option>
+                  <option value="Hair Booth">Hair Booth</option>
+                  <option value="Treatment Room">Treatment Room</option>
+                  <option value="Upstairs Suite Waitlist">Upstairs Suite Waitlist</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label for="license-type">License Type</label>
+                <select id="license-type" name="license_type" required>
+                  <option value="" disabled selected>Select a license type</option>
+                  <option value="Cosmetology">Cosmetology</option>
+                  <option value="Esthetics">Esthetics</option>
+                  <option value="Massage Therapy">Massage Therapy</option>
+                  <option value="Nail Technician">Nail Technician</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="license-number">SC License Number</label>
+                <input type="text" id="license-number" name="sc_license_number" required />
+              </div>
+
+              <div class="form-field">
+                <label for="years-industry">Years in the Industry</label>
+                <input type="number" id="years-industry" name="years_in_industry" min="0" step="1" required />
+              </div>
+              <div class="form-field">
+                <label for="client-count">Approx. Current Client Count</label>
+                <input type="number" id="client-count" name="approx_client_count" min="0" step="1" required />
+              </div>
+
+              <div class="form-field">
+                <label for="start-date">Desired Start Date</label>
+                <input type="date" id="start-date" name="desired_start_date" required />
+              </div>
+              <div class="form-field">
+                <label for="portfolio-link">Instagram / Portfolio Link <span class="optional-tag">(optional)</span></label>
+                <input type="url" id="portfolio-link" name="portfolio_link" placeholder="https://instagram.com/yourhandle" />
+              </div>
+
+              <div class="form-field full">
+                <label for="inquiry-message">Message</label>
+                <textarea id="inquiry-message" name="message" placeholder="Tell us a bit about your business and what you're looking for."></textarea>
+              </div>
+            </div>
+
+            <div class="form-submit">
+              <button type="submit" class="btn btn-primary btn-lg">Send Inquiry</button>
+            </div>
+            <p class="form-note">We'll reach out within a few business days to talk details and schedule a tour.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact -->
+    <section class="section section-dark">
+      <div class="container">
+        <p class="eyebrow light center">Questions First?</p>
+        <h2 class="center">Let's talk about your space</h2>
+        <p class="section-lead light center">Call, email, or stop by &mdash; we're happy to show you around before you commit to anything.</p>
+        <div class="contact-strip" style="margin-top: 36px;">
+          <div class="contact-strip-item">
+            <h4>Call</h4>
+            <a href="tel:+18036465896">(803) 646-5896</a>
+          </div>
+          <div class="contact-strip-item">
+            <h4>Email</h4>
+            <a href="mailto:totalvibesalon@gmail.com">totalvibesalon@gmail.com</a>
+          </div>
+          <div class="contact-strip-item">
+            <h4>Visit</h4>
+            <a href="contact.html">1510 Whiskey Rd, Aiken, SC</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <svg class="circle-motif circle-motif--footer" viewBox="0 0 400 400" aria-hidden="true" focusable="false">
+      <circle cx="200" cy="200" r="188" stroke-width="3" stroke-linecap="round" pathLength="100" stroke-dasharray="88 12" />
+    </svg>
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="align-items: flex-start;">
+          <span class="brand-name"><span class="brand-total">Total</span><span class="brand-vibe">Vibe</span></span>
+          <span class="brand-tag">Salon &amp; Studios</span>
+        </a>
+        <p>A multi-service beauty &amp; relaxation studio under one roof in Aiken, SC.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/total.vibe.salon/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="https://www.tiktok.com/@total.vibe.salon?_r=1&_t=ZT-999vVmKMkhR" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 2h-3.2v13.6a2.9 2.9 0 1 1-2.9-2.9c.3 0 .6 0 .9.1V9.5a6.2 6.2 0 1 0 5.2 6.1V8.8a7.6 7.6 0 0 0 4.6 1.6V7.2a4.4 4.4 0 0 1-4.6-4.4V2Z"/></svg>
+          </a>
+          <a href="https://www.facebook.com/share/17vkGhQVBL/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.8h2.6l.4-3h-3v-1.9c0-.9.2-1.5 1.5-1.5h1.6V4.1c-.3 0-1.2-.1-2.3-.1-2.3 0-3.9 1.4-3.9 4V10h-2.6v3h2.6v8h3.1Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-services">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services/lash-extensions.html">Lash Extensions</a></li>
+          <li><a href="services/hair-salon.html">Hair Salon</a></li>
+          <li><a href="services/waxing.html">Waxing</a></li>
+          <li><a href="services/nails.html">Nails</a></li>
+          <li><a href="services/spray-tan.html">Spray Tan</a></li>
+          <li><a href="services/electrolysis-facials.html">Electrolysis &amp; Facials</a></li>
+          <li><a href="services/yoga.html">Yoga</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="tel:+18036465896">(803) 646-5896</a></li>
+          <li><a href="mailto:totalvibesalon@gmail.com">totalvibesalon@gmail.com</a></li>
+          <li>1510 Whiskey Rd, Aiken, SC</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; <span id="year"></span> Total Vibe Salon &amp; Studios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js?v=1"></script>
+  <script>
+    // Page-specific logic for rent-a-space.html only — kept out of the
+    // shared main.js so it has no effect on any other page.
+    (function () {
+      // Single source of truth for the three space cards: change a
+      // card's `status` here and its badge + button update together.
+      var SPACES = [
+        {
+          title: "Hair Booth",
+          status: "available",
+          description: "A full styling station on our open salon floor — ready for an established stylist who already has clients booking with them.",
+          rate: "Rate: [TBD]",
+          amenities: [
+            "Styling chair &amp; mirror station",
+            "Shampoo bowl access",
+            "Dedicated storage drawer"
+          ],
+          formValue: "Hair Booth"
+        },
+        {
+          title: "Private Treatment Room",
+          status: "available",
+          description: "A private, closable room suited to massage therapy or esthetics — built for the one-on-one privacy your clients expect.",
+          rate: "Rate: [TBD]",
+          amenities: [
+            "Private, closable door",
+            "Room for a treatment table or chair",
+            "Nearby sink access"
+          ],
+          formValue: "Treatment Room"
+        },
+        {
+          title: "Upstairs Suite with Sink",
+          status: "coming-soon",
+          description: "A flexible upstairs suite with its own sink — suited to almost any service. Currently being finished out.",
+          rate: "Rate: [TBD]",
+          amenities: [
+            "In-suite sink",
+            "Flexible layout for any service",
+            "Private upstairs entrance"
+          ],
+          formValue: "Upstairs Suite Waitlist"
+        }
+      ];
+
+      var STATUS_CONFIG = {
+        "available": { label: "Available", buttonLabel: "Inquire About This Space" },
+        "filled": { label: "Filled", buttonLabel: "Currently Filled" },
+        "coming-soon": { label: "Coming Soon", buttonLabel: "Join the Waitlist" }
+      };
+
+      function cameraIconSVG() {
+        return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1Z"/><circle cx="12" cy="13" r="3.5"/></svg>';
+      }
+
+      function renderSpaceCards() {
+        var grid = document.getElementById("space-grid");
+        if (!grid) return;
+
+        SPACES.forEach(function (space) {
+          var cfg = STATUS_CONFIG[space.status];
+          var isFilled = space.status === "filled";
+
+          var amenitiesHTML = space.amenities
+            .map(function (a) { return "<li>" + a + "</li>"; })
+            .join("");
+
+          var buttonHTML = isFilled
+            ? '<span class="btn btn-outline btn-block" aria-disabled="true" style="opacity:0.55; pointer-events:none;">' + cfg.buttonLabel + "</span>"
+            : '<button type="button" class="btn btn-primary btn-block js-inquire" data-space="' + space.formValue + '">' + cfg.buttonLabel + "</button>";
+
+          var card = document.createElement("article");
+          card.className = "space-card";
+          card.setAttribute("data-status", space.status);
+          card.innerHTML =
+            '<div class="space-card-photo">' + cameraIconSVG() + "<span>Photo coming soon</span></div>" +
+            '<span class="status-badge status-' + space.status + '">' + cfg.label + "</span>" +
+            '<div class="space-card-body">' +
+              "<h3>" + space.title + "</h3>" +
+              "<p>" + space.description + "</p>" +
+              '<p class="placeholder-note">' + space.rate + "</p>" +
+              '<ul class="service-list space-amenities">' + amenitiesHTML + "</ul>" +
+              buttonHTML +
+            "</div>";
+
+          grid.appendChild(card);
+        });
+      }
+
+      function wireInquireButtons() {
+        document.addEventListener("click", function (event) {
+          var btn = event.target.closest(".js-inquire");
+          if (!btn) return;
+
+          var formSection = document.getElementById("inquiry-form");
+          var select = document.getElementById("space-interest");
+          if (!formSection) return;
+
+          if (select && btn.dataset.space) {
+            select.value = btn.dataset.space;
+            select.classList.remove("field-flash");
+            void select.offsetWidth; // restart the flash animation
+            select.classList.add("field-flash");
+          }
+
+          formSection.scrollIntoView({ behavior: "smooth", block: "start" });
+
+          var nameField = document.getElementById("inquiry-name");
+          if (nameField) {
+            window.setTimeout(function () {
+              nameField.focus({ preventScroll: true });
+            }, 500);
+          }
+        });
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        renderSpaceCards();
+        wireInquireButtons();
+      });
+    })();
+  </script>
+</body>
+</html>
