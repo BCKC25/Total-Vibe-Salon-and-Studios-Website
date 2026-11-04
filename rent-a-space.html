@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Parisienne&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=2" />
+  <link rel="stylesheet" href="css/styles.css?v=3" />
 </head>
 <body>
 
@@ -113,7 +113,7 @@
       <div class="container">
         <p class="eyebrow center">Available Spaces</p>
         <h2 class="center">Find your space</h2>
-        <p class="section-lead center">Three space types, each suited to a different kind of independent practice.</p>
+        <p class="section-lead center">Two space types, each suited to a different kind of independent practice.</p>
 
         <!--
           Space cards are rendered from the SPACES array in the script
@@ -165,9 +165,8 @@
 
           <div class="amenity-item">
             <span class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg></span>
-            <div><h4>Flexible Access Hours</h4><p>Come and go on a schedule that works for you and your clients.</p></div>
+            <div><h4>Flexible Access Hours</h4><p>Access is as needed &mdash; exterior doors use code locks, so you can come and go on your own schedule.</p></div>
           </div>
-          <!-- [confirm] exact access hours / after-hours policy -->
         </div>
       </div>
     </section>
@@ -180,7 +179,7 @@
         <ul class="service-list" style="margin-top: 22px;">
           <li>Active South Carolina license in your field (cosmetology, esthetics, or massage therapy)</li>
           <li>Proof of current professional liability insurance</li>
-          <li class="placeholder-note">[more TBD]</li>
+          <li>No subletting &mdash; your space is for your own independent practice</li>
         </ul>
       </div>
     </section>
@@ -194,23 +193,23 @@
         <div class="faq-list">
           <details class="faq-item">
             <summary>How long is the lease term?</summary>
-            <p class="faq-answer placeholder-note">[TBD &mdash; lease length to be confirmed]</p>
+            <p class="faq-answer">12 months, with the option to renew. We're looking for long-term tenants who want to grow with us.</p>
           </details>
           <details class="faq-item">
             <summary>Is a deposit required?</summary>
-            <p class="faq-answer placeholder-note">[TBD &mdash; deposit amount and terms to be confirmed]</p>
+            <p class="faq-answer">Yes &mdash; a deposit equal to one month's rent is due at signing, in addition to your first month's rent.</p>
           </details>
           <details class="faq-item">
             <summary>What are the studio's access hours?</summary>
-            <p class="faq-answer placeholder-note">[TBD &mdash; access hours to be confirmed]</p>
+            <p class="faq-answer">Access is as needed. Exterior doors use code locks, so you can come and go on your own schedule.</p>
           </details>
           <details class="faq-item">
             <summary>Can I bring and sell my own products?</summary>
-            <p class="faq-answer placeholder-note">[TBD &mdash; product policy to be confirmed]</p>
+            <p class="faq-answer">Yes &mdash; each provider is independent and can customize their space and sell their own products. Subletting your space to someone else isn't permitted.</p>
           </details>
           <details class="faq-item">
             <summary>How soon can I start?</summary>
-            <p class="faq-answer placeholder-note">[TBD &mdash; depends on current space availability; we'll confirm an exact timeline with you directly]</p>
+            <p class="faq-answer">As soon as possible &mdash; space is available now. Contact us today and we'll get you started.</p>
           </details>
         </div>
       </div>
@@ -252,7 +251,6 @@
                   <option value="" disabled selected>Select a space</option>
                   <option value="Hair Booth">Hair Booth</option>
                   <option value="Treatment Room">Treatment Room</option>
-                  <option value="Upstairs Suite Waitlist">Upstairs Suite Waitlist</option>
                 </select>
               </div>
 
@@ -424,18 +422,6 @@
             "Nearby sink access"
           ],
           formValue: "Treatment Room"
-        },
-        {
-          title: "Upstairs Suite with Sink",
-          status: "coming-soon",
-          description: "A flexible upstairs suite with its own sink — suited to almost any service. Currently being finished out.",
-          rate: "Rate: [TBD]",
-          amenities: [
-            "In-suite sink",
-            "Flexible layout for any service",
-            "Private upstairs entrance"
-          ],
-          formValue: "Upstairs Suite Waitlist"
         }
       ];
 

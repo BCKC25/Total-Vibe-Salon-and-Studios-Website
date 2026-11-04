@@ -702,7 +702,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .benefit-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 22px; margin-top: 12px; }
 
 /* ----- Available Spaces cards ----- */
-.space-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 12px; }
+.space-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 12px; max-width: 760px; margin-left: auto; margin-right: auto; }
 .space-card {
   background: #fff;
   border: 1px solid var(--line);
