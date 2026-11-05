@@ -18,7 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Parisienne&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css?v=3" />
+  <link rel="stylesheet" href="css/styles.css?v=4" />
 </head>
 <body>
 
@@ -402,26 +402,30 @@
         {
           title: "Hair Booth",
           status: "available",
-          description: "A full styling station on our open salon floor — ready for an established stylist who already has clients booking with them.",
+          description: "One styling chair and mirror station on our open salon floor — ready for an established stylist who already has clients booking with them.",
           rate: "Rate: [TBD]",
           amenities: [
             "Styling chair &amp; mirror station",
             "Shampoo bowl access",
             "Dedicated storage drawer"
           ],
-          formValue: "Hair Booth"
+          formValue: "Hair Booth",
+          photo: "assets/images/rent-hair-booth.jpg",
+          photoAlt: "Styling chairs and mirror stations on the Total Vibe salon floor"
         },
         {
           title: "Private Treatment Room",
           status: "available",
-          description: "A private, closable room suited to massage therapy or esthetics — built for the one-on-one privacy your clients expect.",
+          description: "A private, closable 8' x 11' room suited to massage therapy or esthetics — built for the one-on-one privacy your clients expect.",
           rate: "Rate: [TBD]",
           amenities: [
             "Private, closable door",
-            "Room for a treatment table or chair",
+            "8' x 11' room for a treatment table or chair",
             "Nearby sink access"
           ],
-          formValue: "Treatment Room"
+          formValue: "Treatment Room",
+          photo: "assets/images/rent-treatment-room.jpg",
+          photoAlt: "Private 8 by 11 foot treatment room with a treatment table"
         }
       ];
 
@@ -451,11 +455,15 @@
             ? '<span class="btn btn-outline btn-block" aria-disabled="true" style="opacity:0.55; pointer-events:none;">' + cfg.buttonLabel + "</span>"
             : '<button type="button" class="btn btn-primary btn-block js-inquire" data-space="' + space.formValue + '">' + cfg.buttonLabel + "</button>";
 
+          var photoHTML = space.photo
+            ? '<div class="space-card-photo has-photo"><img src="' + space.photo + '" alt="' + space.photoAlt + '" /></div>'
+            : '<div class="space-card-photo">' + cameraIconSVG() + "<span>Photo coming soon</span></div>";
+
           var card = document.createElement("article");
           card.className = "space-card";
           card.setAttribute("data-status", space.status);
           card.innerHTML =
-            '<div class="space-card-photo">' + cameraIconSVG() + "<span>Photo coming soon</span></div>" +
+            photoHTML +
             '<span class="status-badge status-' + space.status + '">' + cfg.label + "</span>" +
             '<div class="space-card-body">' +
               "<h3>" + space.title + "</h3>" +

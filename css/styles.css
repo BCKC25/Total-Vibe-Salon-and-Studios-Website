@@ -727,6 +727,8 @@ ul { margin: 0; padding: 0; list-style: none; }
   border-bottom: 1px solid var(--line);
 }
 .space-card-photo svg { width: 38px; height: 38px; opacity: 0.55; }
+.space-card-photo.has-photo { padding: 0; }
+.space-card-photo.has-photo img { width: 100%; height: 100%; object-fit: cover; display: block; }
 .space-card-body { padding: 24px 26px 26px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
 .space-card-body h3 { margin-bottom: 0; }
 .space-card-body p { margin: 0; }
