@@ -54,3 +54,16 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+// Booking-click tracking (GA4): fires whenever a visitor clicks a
+// provider booking link or button anywhere on the site.
+document.addEventListener("click", (e) => {
+  const a = e.target.closest("a[data-book]");
+  if (!a || typeof gtag !== "function") return;
+  gtag("event", "booking_click", {
+    service: a.dataset.service,
+    provider: a.dataset.provider,
+    link_url: a.href,
+    page_path: location.pathname
+  });
+});

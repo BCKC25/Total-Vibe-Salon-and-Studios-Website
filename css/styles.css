@@ -468,7 +468,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   border-radius: var(--radius);
   padding: 30px 22px;
 }
-.contact-strip-item h4 { font-family: "Playfair Display", serif; margin-bottom: 8px; }
+.contact-strip-item h3 { font-family: "Playfair Display", serif; font-size: 1rem; margin-bottom: 8px; }
 .contact-strip-item a { font-weight: 600; color: var(--charcoal); }
 
 /* ---------- About page ---------- */
@@ -550,6 +550,28 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .related-services { margin-top: 8px; }
 .related-services a { font-weight: 600; color: var(--charcoal); border-bottom: 2px solid var(--blush); }
+
+/* ---------- More Services / Book a Service pill grid ---------- */
+.more-services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+  padding: 0;
+}
+.more-services-grid li { list-style: none; }
+.more-services-grid a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--charcoal);
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--charcoal);
+  transition: background 0.2s ease, color 0.2s ease;
+}
+.more-services-grid a:hover { background: var(--charcoal); color: #fff; }
 
 /* ---------- Practitioners (multi-artist tabs) ---------- */
 .practitioner-tabs {
@@ -655,7 +677,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   flex-shrink: 0;
 }
 .contact-info-item .icon svg { width: 20px; height: 20px; }
-.contact-info-item h4 { margin-bottom: 4px; }
+.contact-info-item h3 { font-size: 1rem; margin-bottom: 4px; }
 .contact-info-item p { margin: 0; }
 .contact-map { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 4 / 3.4; }
 .contact-map iframe { width: 100%; height: 100%; border: 0; }
@@ -673,11 +695,12 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 .footer-brand { align-items: flex-start; }
 .footer-brand p { color: rgba(255,255,255,0.65); font-size: 0.9rem; margin-top: 14px; }
-.footer-links h4, .footer-services h4, .footer-contact h4 {
+.footer-col-label {
   color: #fff;
   font-family: "Playfair Display", serif;
   font-size: 1rem;
-  margin-bottom: 16px;
+  font-weight: 600;
+  margin: 0 0 16px;
 }
 .footer-links ul, .footer-services ul, .footer-contact ul { display: grid; gap: 10px; }
 .footer-links a, .footer-services a, .footer-contact a { color: rgba(255,255,255,0.7); font-size: 0.92rem; }
@@ -726,7 +749,7 @@ ul { margin: 0; padding: 0; list-style: none; }
   flex-shrink: 0;
 }
 .amenity-item .icon svg { width: 20px; height: 20px; color: var(--charcoal); }
-.amenity-item h4 { margin: 0 0 2px; font-size: 1rem; }
+.amenity-item h3 { margin: 0 0 2px; font-size: 1rem; }
 .amenity-item p { margin: 0; font-size: 0.85rem; }
 
 /* ----- FAQ accordion ----- */
