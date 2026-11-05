@@ -263,7 +263,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 84px 0 76px;
+  padding: 42px 0 38px;
   background: linear-gradient(180deg, var(--blush-soft) 0%, var(--cream) 100%);
   text-align: center;
 }
@@ -867,6 +867,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 @media (max-width: 500px) {
   .hero { padding: 60px 0 52px; }
+  .hero:not(.page-hero) { padding: 30px 0 26px; }
   .section { padding: 60px 0; }
   .brand-logo { height: 64px; }
   .brand-total { font-size: 1.25rem; }
